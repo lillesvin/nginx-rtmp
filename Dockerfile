@@ -44,6 +44,6 @@ VOLUME ["/config", "/recordings"]
 
 COPY ["nginx.conf", "/config/nginx.conf"]
 
-EXPOSE 80 443 1935 8080
+EXPOSE 80 1935
 
 CMD ["nginx", "-g", "daemon off;"]
